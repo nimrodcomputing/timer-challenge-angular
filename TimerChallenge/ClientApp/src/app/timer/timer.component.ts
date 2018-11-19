@@ -11,7 +11,7 @@ export class TimerComponent implements OnInit {
     validInput: boolean = true;
     alert: string = null;
 
-    logs = [];
+    logs:any[] = null;
 
     constructor(
         private loggingService: LoggingService

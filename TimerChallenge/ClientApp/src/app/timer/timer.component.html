@@ -1,13 +1,13 @@
 <h3>Timer</h3>
 
 <div class="row">
-  <div class="col-md-6 col-xs-12 col-offset-md-3">
+  <div class="col-md-6 col-xs-12 offset-md-3">
     <form>
       <div class="form-group">
         <label for="startTime">Enter time in seconds</label>
         <input type="number" class="form-control" id="timer" name="timer" [(ngModel)]="timer" (blur)="validateTimer()" placeholder="Enter time">
         <div *ngIf="!validInput" class="text-danger">
-          Timer must be at least 2 minutes.
+          Timer must be more than 2 minutes.
         </div>
       </div>
       <button class="btn btn-primary" (click)="start($event)">Submit</button>
@@ -21,9 +21,9 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6 col-xs-12 col-offset-md-3">
+  <div class="col-md-6 col-xs-12 offset-md-3">
 
-    <h1 class="text-right">{{ timer }}</h1>
+    <h1 class="text-center">{{ timer }}</h1>
   </div>
 
 </div>
@@ -31,6 +31,7 @@
 <hr />
 
 <div class="row" *ngIf="logs">
+  <h4 class="col-12">Logs</h4>
   <div *ngFor="let log of logs" class="col-12">
     {{ log.text }}
   </div>
