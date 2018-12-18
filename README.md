@@ -16,10 +16,6 @@ To run from the command line:
 dotnet run
 ````
 
-````
-dotnet run
-````
-
 To run in the development environment, set the ASPNETCORE_ENVIRONMENT environment
 variable to `Development`.
 
