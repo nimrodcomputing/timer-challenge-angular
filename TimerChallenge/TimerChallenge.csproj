@@ -25,6 +25,9 @@
     <None Include="..\README.md">
       <Link>README.md</Link>
     </None>
+    <None Include="..\README-angular.md">
+      <Link>README-angular.md</Link>
+    </None>
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
